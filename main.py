@@ -38,7 +38,7 @@ def index() :
                     'word': word,
                     'tf': round(count / len(words), 6),
                     'count': count,
-                    'length': len(all_words),
+                    'length': len(words),
                     'idf': round(idf_score.get(word, 0.0), 4)
                 } for word, count in word_counts]
                 # Создаем список со словарями для каждого слова с результатами
